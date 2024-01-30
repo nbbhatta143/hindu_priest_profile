@@ -1,0 +1,55 @@
+.profile-image {
+  border-radius: 50%;
+  width: 200px; /* Set the width to your preferred size */
+  height: 200px; /* Set the height to your preferred size */
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+}
+body {
+  background-color: #f8f4e3; /* Light cream background color */
+}
+.service-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container {
+  background-color: #f8f4e3; /* Light cream background color */
+  text-align: center;
+  padding: 20px;
+}
+.profile-name {
+  font-family: "Roboto", sans-serif; /* Use the chosen font */
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333; /* Adjust the color as needed */
+  margin-bottom: 20px;
+}
+.service-card {
+  border: 1px solid #f09300; /* Saffron border color */
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f09300; /* Saffron background color */
+  border-bottom: 1px solid #ccc;
+}
+
+.card-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.card-content.open {
+  max-height: 100px; /* Adjust this value based on your content height */
+}
+
+/* Add additional styling as needed */
