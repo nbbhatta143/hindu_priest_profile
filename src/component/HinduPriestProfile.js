@@ -1,8 +1,8 @@
 // Import necessary React modules
-import React, { useState } from "react";
-import "./HinduPriestProfile.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react"
+import "./HinduPriestProfile.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faUser } from "@fortawesome/free-solid-svg-icons"
 
 // Create a functional component for the Hindu Priest profile
 const HinduPriestProfile = () => {
@@ -24,14 +24,14 @@ const HinduPriestProfile = () => {
       description: "Offer guidance on Vastu Shastra for homes and businesses.",
     },
     // Add more services as needed
-  ]);
+  ])
 
   // Define the initial state for the priest's information
   const priestInfo = {
     name: "Priest Name",
     imageUrl: "priest_image.jpg",
     phoneNumber: "123-456-7890",
-  };
+  }
 
   // Define a function to handle the card click event
   const handleCardClick = (id) => {
@@ -40,17 +40,18 @@ const HinduPriestProfile = () => {
       prevServices.map((service) =>
         service.id === id ? { ...service, isOpen: !service.isOpen } : service
       )
-    );
-  };
+    )
+  }
 
   return (
     <div className="profile-container">
       <h1 className="profile-name">{priestInfo.name}</h1>
       <FontAwesomeIcon
         icon={faUser}
-        size="4x" // Adjust the size as needed
-        color="#333" // Adjust the color as needed
+        size="4x"
+        color="#333"
         className="profile-image"
+        alt="Profile Image of Hindu Priest"
       />
       <h2>Services</h2>
       {services.map((service) => (
@@ -67,7 +68,7 @@ const HinduPriestProfile = () => {
       <h2>Contact Information</h2>
       <p>Phone Number: {priestInfo.phoneNumber}</p>
     </div>
-  );
-};
+  )
+}
 
-export default HinduPriestProfile;
+export default HinduPriestProfile
